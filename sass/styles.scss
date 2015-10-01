@@ -3,9 +3,22 @@
 @import "partials/clearfix";
 @import "https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700.css";
 
+$phone: "only screen and (max-width: 400px)";
+$desktop: "only screen and (min-width: 800px)";
+$tablet: "only screen and (min-width: 400px) and (max-width: 800px)";
+
 body {
-  background: #57c1c7;
-  padding: 48px;
+  background-color: #57c1c7;
+  margin: auto;
+  @media #{$phone} {
+    font-size: 80%;
+  }
+  @media #{$tablet} {
+    font-size: 90%;
+  }
+  @media #{$desktop} {
+    padding: 48px;
+  }
 }
 
 h1, h2, h3, h4 {
@@ -20,6 +33,9 @@ h1, aside, footer, .content, .nav, {
 .nav {
   display: block;
   text-align: center;
+  @media #{$phone} {
+    display: none;
+  }
 }
 
 .nav > li {
@@ -30,13 +46,25 @@ h1, aside, footer, .content, .nav, {
 h1 {
   text-transform: uppercase;
   text-align: center;
-  padding: 32px;
   border: 1px solid #57c1c7;
+  @media #{$phone} {
+    background-color: #389fa8;
+    color: #57c1c7;
+    padding: 8px;
+  }
+  @media #{$tablet} {
+    display: block;
+    padding: 16px;
+  }
+  @media #{$desktop} {
+    padding: 32px;
+  }
 }
 
 h2 {
   font-size: 150%;
   display: inline-block;
+  margin-bottom: 8px;
   border-bottom: 1px dashed #57c1c7;
 }
 
@@ -75,31 +103,41 @@ aside > p {
 }
 
 .row {
-  width: 70%;
   margin: auto;
+  @media #{$desktop} {
+    width: 800px;
+  }
 }
 
 .content {
-  float: left;
-  width: 70%;
-  height: 540px;
   margin: auto;
-  padding: 32px;
   box-sizing: border-box;
+  padding: 32px;
+  @media #{$desktop} {
+    float: left;
+    width: 600px;
+    height: 600px;
+  }
 }
 
 aside {
-  float: right;
-  width: 30%;
-  height: 540px;
   margin: auto;
-  padding: 32px;
-  border-left: 1px solid #57c1c7;
   box-sizing: border-box;
+  padding: 16px;
+  @media #{$desktop} {
+    float: left;
+    width: 200px;
+    height: 600px;
+    padding: 32px;
+    border-left: 1px solid #57c1c7;
+  }
 }
 
 footer {
   border-top: 1px solid #57c1c7;
+  @media #{$tablet} {
+    text-align: center;
+  }
 }
 
 a {
@@ -108,7 +146,7 @@ a {
 }
 
 .footer_links > li {
-  float: left;
+  display: inline-block;
   padding: 16px;
 }
 
@@ -118,9 +156,16 @@ a {
 }
 
 .left {
-  float: right;
+  display: none;
+  @media #{$desktop} {
+    float: right;
+    display: block;
+  }
 }
 
 .right {
-  float: left;
+  padding-left: 16px;
+  @media #{$desktop} {
+    float: left;
+  }
 }

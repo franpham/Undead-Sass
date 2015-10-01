@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 @import "https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700.css";
+/* line 18, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -24,135 +25,221 @@ time, mark, audio, video {
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
+/* line 28, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
 
+/* line 31, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 body {
   line-height: 1; }
 
+/* line 34, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 ol, ul {
   list-style: none; }
 
+/* line 37, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 blockquote, q {
   quotes: none; }
 
+/* line 41, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none; }
 
+/* line 45, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_reset.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+/* line 2, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_clearfix.scss */
 .clearfix:before,
 .clearfix:after {
   content: "";
   display: table; }
 
+/* line 7, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_clearfix.scss */
 .clearfix:after {
   clear: both; }
 
+/* line 11, /Users/franpham/DevLeague/Undead-Sass/sass/partials/_clearfix.scss */
 .clearfix {
   zoom: 1;
   /* ie 6/7 */ }
 
+/* line 10, stdin */
 body {
-  background: #57c1c7;
-  padding: 48px; }
+  background-color: #57c1c7;
+  margin: auto; }
+  @media only screen and (max-width: 400px) {
+    /* line 10, stdin */
+    body {
+      font-size: 80%; } }
+  @media only screen and (min-width: 400px) and (max-width: 800px) {
+    /* line 10, stdin */
+    body {
+      font-size: 90%; } }
+  @media only screen and (min-width: 800px) {
+    /* line 10, stdin */
+    body {
+      padding: 48px; } }
 
+/* line 24, stdin */
 h1, h2, h3, h4 {
   color: #57c1c7;
   font-family: "Droid Serif"; }
 
+/* line 29, stdin */
 h1, aside, footer, .content, .nav {
   background-color: white; }
 
+/* line 33, stdin */
 .nav {
   display: block;
   text-align: center; }
+  @media only screen and (max-width: 400px) {
+    /* line 33, stdin */
+    .nav {
+      display: none; } }
 
+/* line 41, stdin */
 .nav > li {
   display: inline-block;
   padding: 16px; }
 
+/* line 46, stdin */
 h1 {
   text-transform: uppercase;
   text-align: center;
-  padding: 32px;
   border: 1px solid #57c1c7; }
+  @media only screen and (max-width: 400px) {
+    /* line 46, stdin */
+    h1 {
+      background-color: #389fa8;
+      color: #57c1c7;
+      padding: 8px; } }
+  @media only screen and (min-width: 400px) and (max-width: 800px) {
+    /* line 46, stdin */
+    h1 {
+      display: block;
+      padding: 16px; } }
+  @media only screen and (min-width: 800px) {
+    /* line 46, stdin */
+    h1 {
+      padding: 32px; } }
 
+/* line 64, stdin */
 h2 {
   font-size: 150%;
   display: inline-block;
+  margin-bottom: 8px;
   border-bottom: 1px dashed #57c1c7; }
 
+/* line 71, stdin */
 h3 {
   font-size: smaller;
   padding-bottom: 32px; }
 
+/* line 76, stdin */
 a:hover {
   color: #57c1c7; }
 
+/* line 80, stdin */
 .read_more {
   background-color: #389fa8;
   color: #57c1c7; }
 
+/* line 85, stdin */
 a:hover.read_more {
   background-color: black; }
 
+/* line 89, stdin */
 .read_more {
   margin: 16px;
   padding: 16px;
   display: block; }
 
+/* line 95, stdin */
 aside > h4 {
   font-size: larger;
   margin: 16px; }
 
+/* line 100, stdin */
 aside > p {
   margin: 16px;
   font-size: 90%; }
 
+/* line 105, stdin */
 .row {
-  width: 70%;
   margin: auto; }
+  @media only screen and (min-width: 800px) {
+    /* line 105, stdin */
+    .row {
+      width: 800px; } }
 
+/* line 112, stdin */
 .content {
-  float: left;
-  width: 70%;
-  height: 540px;
   margin: auto;
-  padding: 32px;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 32px; }
+  @media only screen and (min-width: 800px) {
+    /* line 112, stdin */
+    .content {
+      float: left;
+      width: 600px;
+      height: 600px; } }
 
+/* line 123, stdin */
 aside {
-  float: right;
-  width: 30%;
-  height: 540px;
   margin: auto;
-  padding: 32px;
-  border-left: 1px solid #57c1c7;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  padding: 16px; }
+  @media only screen and (min-width: 800px) {
+    /* line 123, stdin */
+    aside {
+      float: left;
+      width: 200px;
+      height: 600px;
+      padding: 32px;
+      border-left: 1px solid #57c1c7; } }
 
+/* line 136, stdin */
 footer {
   border-top: 1px solid #57c1c7; }
+  @media only screen and (min-width: 400px) and (max-width: 800px) {
+    /* line 136, stdin */
+    footer {
+      text-align: center; } }
 
+/* line 143, stdin */
 a {
   color: black;
   text-decoration: none; }
 
+/* line 148, stdin */
 .footer_links > li {
-  float: left;
+  display: inline-block;
   padding: 16px; }
 
+/* line 153, stdin */
 .left > p {
   font-size: smaller;
   padding: 16px; }
 
+/* line 158, stdin */
 .left {
-  float: right; }
+  display: none; }
+  @media only screen and (min-width: 800px) {
+    /* line 158, stdin */
+    .left {
+      float: right;
+      display: block; } }
 
+/* line 166, stdin */
 .right {
-  float: left; }
+  padding-left: 16px; }
+  @media only screen and (min-width: 800px) {
+    /* line 166, stdin */
+    .right {
+      float: left; } }
