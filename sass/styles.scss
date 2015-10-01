@@ -1,0 +1,126 @@
+
+@import "partials/reset";
+@import "partials/clearfix";
+@import "https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700.css";
+
+body {
+  background: #57c1c7;
+  padding: 48px;
+}
+
+h1, h2, h3, h4 {
+  color: #57c1c7;
+  font-family: "Droid Serif";
+}
+
+h1, aside, footer, .content, .nav, {
+  background-color: white;
+}
+
+.nav {
+  display: block;
+  text-align: center;
+}
+
+.nav > li {
+  display: inline-block;
+  padding: 16px;
+}
+
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 32px;
+  border: 1px solid #57c1c7;
+}
+
+h2 {
+  font-size: 150%;
+  display: inline-block;
+  border-bottom: 1px dashed #57c1c7;
+}
+
+h3 {
+  font-size: smaller;
+  padding-bottom: 32px;
+}
+
+a:hover {
+  color: #57c1c7;
+}
+
+.read_more {
+  background-color: #389fa8;
+  color: #57c1c7;
+}
+
+a:hover.read_more {
+  background-color: black;
+}
+
+.read_more {
+  margin: 16px;
+  padding: 16px;
+  display: block;
+}
+
+aside > h4 {
+  font-size: larger;
+  margin: 16px;
+}
+
+aside > p {
+  margin: 16px;
+  font-size: 90%;
+}
+
+.row {
+  width: 70%;
+  margin: auto;
+}
+
+.content {
+  float: left;
+  width: 70%;
+  height: 540px;
+  margin: auto;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+aside {
+  float: right;
+  width: 30%;
+  height: 540px;
+  margin: auto;
+  padding: 32px;
+  border-left: 1px solid #57c1c7;
+  box-sizing: border-box;
+}
+
+footer {
+  border-top: 1px solid #57c1c7;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+.footer_links > li {
+  float: left;
+  padding: 16px;
+}
+
+.left > p {
+  font-size: smaller;
+  padding: 16px;
+}
+
+.left {
+  float: right;
+}
+
+.right {
+  float: left;
+}
